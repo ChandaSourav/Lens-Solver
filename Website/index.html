@@ -4,15 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>webcam capture</title>
+    <title>Stella</title>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.25/webcam.js"></script>   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div id="camera"></div>
-    <input type="button" value="Save" id="btPic" onclick="takeSnapShot()" /> 
-    <p id="snapShot"></p>
+    <div class="container">
+        <figure class="image-container">
+            <img id="chosen-image">
+            <figcaption id="file-name"></figcaption>
+        </figure>
+        <input type="file" id="upload-button" accept="image/*">
+        <label for="upload-button">
+            <i class="fas fa-upload"></i> &nbsp; Choose A Photo
+        </label>
+    
+        <div id="camera"></div>
+        <input type="button" value="Save" id="btPic" onclick="takeSnapShot()" /> 
+        <p id="snapShot"></p>
+    </div>
     <script src="app.js"></script>
 </body>
 
