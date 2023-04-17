@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>webcam capture</title>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.25/webcam.js"></script>   
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div id="camera" style="height:auto;width:auto; text-align:left;"></div>
-    <input type="button" value="Take a Snap" id="btPic" onclick="takeSnapShot()" /> 
+    <div id="camera"></div>
+    <input type="button" value="Save" id="btPic" onclick="takeSnapShot()" /> 
     <p id="snapShot"></p>
     <script src="app.js"></script>
 </body>
